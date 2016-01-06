@@ -64,8 +64,8 @@ namespace Gym_Interactions
 
         public void SimulateInteraction()
         {
-            var randomId = Guid.NewGuid();
-            SetAvailability(m_Assets[randomId], false);
+          //  var randomId = Guid.NewGuid();
+          //  SetAvailability(m_Assets[randomId], false);
         }
     }
 
