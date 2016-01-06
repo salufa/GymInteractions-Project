@@ -65,7 +65,7 @@ namespace Gym_Interactions
         {
             RegisterForm RegisterForm = new RegisterForm();
             RegisterForm.ShowDialog();
-            this.Hide();
+            //this.Hide();
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)

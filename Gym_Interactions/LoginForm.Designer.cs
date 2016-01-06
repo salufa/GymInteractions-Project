@@ -34,6 +34,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.nameLogintxtBox = new System.Windows.Forms.TextBox();
             this.passwordLoginTxtBox = new System.Windows.Forms.TextBox();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -50,7 +51,7 @@
             // btnEnter
             // 
             this.btnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnter.Location = new System.Drawing.Point(191, 137);
+            this.btnEnter.Location = new System.Drawing.Point(145, 137);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(81, 33);
             this.btnEnter.TabIndex = 1;
@@ -94,11 +95,23 @@
             this.passwordLoginTxtBox.Size = new System.Drawing.Size(243, 29);
             this.passwordLoginTxtBox.TabIndex = 5;
             // 
+            // btnRegister
+            // 
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Location = new System.Drawing.Point(232, 137);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(93, 33);
+            this.btnRegister.TabIndex = 10;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(440, 220);
+            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.passwordLoginTxtBox);
             this.Controls.Add(this.nameLogintxtBox);
             this.Controls.Add(this.label3);
@@ -120,5 +133,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox nameLogintxtBox;
         private System.Windows.Forms.TextBox passwordLoginTxtBox;
+        private System.Windows.Forms.Button btnRegister;
     }
 }

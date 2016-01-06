@@ -47,5 +47,11 @@ namespace Gym_Interactions
                 }
             }
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            RegisterForm RegisterForm = new RegisterForm();
+            RegisterForm.ShowDialog();
+        }
     }
 }
