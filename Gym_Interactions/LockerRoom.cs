@@ -26,12 +26,12 @@ namespace Gym_Interactions
 
         private void btnSauna_Click(object sender, EventArgs e)
         {
-
+            AssetFactory.Instance.Create(4);
         }
 
         private void btnShower_Click(object sender, EventArgs e)
         {
-
+            AssetFactory.Instance.Create(5);
         }
     }
 }
