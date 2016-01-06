@@ -11,6 +11,15 @@ namespace Gym_Interactions.Utilities
     {
         protected Dictionary<Guid, SectorAsset> m_Assets;
 
+        public BaseSector()
+        {
+            m_Assets = new Dictionary<Guid, SectorAsset>();
+        }
+        public void AddAsset(Guid id,SectorAsset asset)
+        {
+            m_Assets.Add(id,asset);
+        }
+
         private void OnAssetChanged(Guid id, bool availability)
         {
             var handler = AssetAvailabilityChanged;

@@ -10,13 +10,14 @@ namespace Gym_Interactions
 
         public void Create(int productID)
         {
-
+            AddAsset(Guid.NewGuid(), new Showers());
+            AddAsset(Guid.NewGuid(), new Sauna());
 
         }
         public void SimulateInteraction()
         {
-            var randomId = Guid.NewGuid();
-            SetAvailability(m_Assets[randomId], false);
+            //var randomId = Guid.NewGuid();
+            //SetAvailability(m_Assets[randomId], false);
         }
 
        

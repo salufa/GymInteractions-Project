@@ -13,13 +13,12 @@ namespace Gym_Interactions
 {
     public partial class Gym : Form
     {
-        public GymSector Factory { get; set; }
+        
         private SectorAwesomizer m_awesomizer;
 
         public Gym(GymSector gym_obj)
         {
             InitializeComponent();
-            Factory = gym_obj;
             gym_obj.AssetAvailabilityChanged += gym_obj_AssetAvailabilityChanged;
             m_awesomizer = new SectorAwesomizer(gym_obj);
             m_awesomizer.Start();
@@ -47,20 +46,20 @@ namespace Gym_Interactions
 
         private void btnBicycle_Click(object sender, EventArgs e)
         {
-            Factory.Create(4);
+            AssetFactory.Instance.Create(3);
 
         }
         private void btnTreadmill_Click(object sender, EventArgs e)
         {
-            Factory.Create(2);
+            AssetFactory.Instance.Create(1);
         }
         private void btnMachines_Click(object sender, EventArgs e)
         {
-            Factory.Create(1);
+            AssetFactory.Instance.Create(0);
         }
         private void btnWeightbench_Click(object sender, EventArgs e)
         {
-            Factory.Create(3);
+            AssetFactory.Instance.Create(2);
         }
 
         private void Gym_Load(object sender, EventArgs e)
