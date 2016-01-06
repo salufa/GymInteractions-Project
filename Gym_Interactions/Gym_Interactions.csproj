@@ -59,9 +59,15 @@
       <DependentUpon>BarRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="BarSector.cs" />
+    <Compile Include="Bicycle.cs" />
     <Compile Include="GymSector.cs" />
+    <Compile Include="Machines.cs" />
     <Compile Include="Models\MultiUserMachine.cs" />
     <Compile Include="Models\SectorAsset.cs" />
+    <Compile Include="Sauna.cs" />
+    <Compile Include="Showers.cs" />
+    <Compile Include="Treadmill.cs" />
+    <Compile Include="Utilities\AssetFactory.cs" />
     <Compile Include="Utilities\BaseSector.cs" />
     <Compile Include="Utilities\ISupportsSimulation.cs" />
     <Compile Include="LockerRoom.cs">
@@ -117,6 +123,7 @@
     <Compile Include="Utilities\EnumerableExtensions.cs" />
     <Compile Include="Utilities\SectorAwesomizer.cs" />
     <Compile Include="Utilities\SectorAwesomizerFlow.cs" />
+    <Compile Include="WeightBench.cs" />
     <EmbeddedResource Include="BarRoom.resx">
       <DependentUpon>BarRoom.cs</DependentUpon>
     </EmbeddedResource>

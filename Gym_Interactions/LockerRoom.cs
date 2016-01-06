@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gym_Interactions.Utilities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,22 @@ namespace Gym_Interactions
         public LockerRoom(LockersSector locker_obj)
         {
             InitializeComponent();
+
+        }
+        private void Locker_Load(object sender , EventArgs e)
+        {
+            ControlHelpers.MakeTransparent(btnSauna);
+            ControlHelpers.MakeTransparent(btnShower);
+        }
+
+        private void btnSauna_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnShower_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
