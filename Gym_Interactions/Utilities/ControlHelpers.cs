@@ -1,6 +1,10 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Imaging;
 
 namespace Gym_Interactions.Utilities
 {
@@ -14,10 +18,6 @@ namespace Gym_Interactions.Utilities
             button.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button.FlatAppearance.BorderSize = 0;
-
-
         }
     }
 }
-   
-

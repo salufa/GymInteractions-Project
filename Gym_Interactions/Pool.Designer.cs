@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.swimBtn = new System.Windows.Forms.Button();
-            this.waterSettings = new System.Windows.Forms.Button();
-            this.lightSettings = new System.Windows.Forms.Button();
             this.picAdjusted = new System.Windows.Forms.PictureBox();
             this.scrBrightness = new System.Windows.Forms.HScrollBar();
             this.picOriginal = new System.Windows.Forms.PictureBox();
@@ -61,26 +59,6 @@
             this.swimBtn.Text = "swim";
             this.swimBtn.UseVisualStyleBackColor = true;
             this.swimBtn.Click += new System.EventHandler(this.swimBtn_Click);
-            // 
-            // waterSettings
-            // 
-            this.waterSettings.Location = new System.Drawing.Point(1135, 2);
-            this.waterSettings.Name = "waterSettings";
-            this.waterSettings.Size = new System.Drawing.Size(75, 40);
-            this.waterSettings.TabIndex = 1;
-            this.waterSettings.Text = "water settings";
-            this.waterSettings.UseVisualStyleBackColor = true;
-            this.waterSettings.Click += new System.EventHandler(this.waterSettings_Click);
-            // 
-            // lightSettings
-            // 
-            this.lightSettings.Location = new System.Drawing.Point(1054, 2);
-            this.lightSettings.Name = "lightSettings";
-            this.lightSettings.Size = new System.Drawing.Size(75, 40);
-            this.lightSettings.TabIndex = 2;
-            this.lightSettings.Text = "Light Settings";
-            this.lightSettings.UseVisualStyleBackColor = true;
-            this.lightSettings.Click += new System.EventHandler(this.lightSettings_Click);
             // 
             // picAdjusted
             // 
@@ -272,8 +250,6 @@
             this.Controls.Add(this.lblBrightness);
             this.Controls.Add(this.picOriginal);
             this.Controls.Add(this.scrBrightness);
-            this.Controls.Add(this.lightSettings);
-            this.Controls.Add(this.waterSettings);
             this.Controls.Add(this.swimBtn);
             this.Controls.Add(this.picAdjusted);
             this.Name = "Pool";
@@ -290,8 +266,6 @@
         #endregion
 
         private System.Windows.Forms.Button swimBtn;
-        private System.Windows.Forms.Button waterSettings;
-        private System.Windows.Forms.Button lightSettings;
         public System.Windows.Forms.PictureBox picAdjusted;
         private System.Windows.Forms.HScrollBar scrBrightness;
         private System.Windows.Forms.Label lblBrightness;
