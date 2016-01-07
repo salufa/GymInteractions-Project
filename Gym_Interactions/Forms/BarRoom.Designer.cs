@@ -1,6 +1,6 @@
 ﻿namespace Gym_Interactions
 {
-    partial class Pool
+    partial class BarRoom
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pool));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BarRoom));
             this.SuspendLayout();
             // 
-            // Pool
+            // BarRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1317, 567);
-            this.Name = "Pool";
-            this.Text = "Pool";
+            this.ClientSize = new System.Drawing.Size(801, 429);
+            this.Name = "BarRoom";
+            this.Text = "BarRoom";
             this.ResumeLayout(false);
 
         }

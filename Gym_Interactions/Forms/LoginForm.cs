@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gym_Interactions.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,9 +12,14 @@ using System.Windows.Forms;
 namespace Gym_Interactions
 {
 
-    
-    public partial class LoginForm : Form
+
+    public partial class LoginForm : BaseForm
     {
+        public static Reception f_instance = new Reception(false);
+
+        public static Reception RInstance { get { return f_instance; } }
+
+
         public LoginForm()
         {
             InitializeComponent();
@@ -25,25 +31,17 @@ namespace Gym_Interactions
             if (nameLogintxtBox.Text == "test" && passwordLoginTxtBox.Text == "test")
             {
                 MessageBox.Show("Welcome Customer");
-               
+
                 Reception reception = new Reception(false);
-                reception.ShowDialog();
-                this.Close();
-
-
-               
-
-                
-                
+                reception.Show();
             }
             else
             {
                 if (nameLogintxtBox.Text == "employee" && passwordLoginTxtBox.Text == "password")
                 {
                     MessageBox.Show("Welcome Employee");
-                    
+
                     new Reception(true);
-                    this.Close();
                 }
             }
         }

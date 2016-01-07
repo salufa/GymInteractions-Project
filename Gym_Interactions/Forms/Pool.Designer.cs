@@ -1,6 +1,6 @@
 ﻿namespace Gym_Interactions
 {
-    partial class BarRoom
+    partial class Pool
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BarRoom));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pool));
+            this.btnSwim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // BarRoom
+            // btnSwim
+            // 
+            this.btnSwim.Location = new System.Drawing.Point(718, 482);
+            this.btnSwim.Name = "btnSwim";
+            this.btnSwim.Size = new System.Drawing.Size(223, 73);
+            this.btnSwim.TabIndex = 0;
+            this.btnSwim.Text = "button1";
+            this.btnSwim.UseVisualStyleBackColor = true;
+            this.btnSwim.Click += new System.EventHandler(this.btnSwim_Click);
+            // 
+            // Pool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(801, 429);
-            this.Name = "BarRoom";
-            this.Text = "BarRoom";
+            this.ClientSize = new System.Drawing.Size(1317, 567);
+            this.Controls.Add(this.btnSwim);
+            this.Name = "Pool";
+            this.Text = "Pool";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnSwim;
+
     }
 }

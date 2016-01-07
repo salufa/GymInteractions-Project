@@ -1,4 +1,5 @@
-﻿using Gym_Interactions.Utilities;
+﻿using Gym_Interactions.Forms;
+using Gym_Interactions.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,13 +8,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+
+
 
 namespace Gym_Interactions
 {
-    public partial class Gym : Form
+    public partial class Gym : BaseForm
     {
-        
+
         private SectorAwesomizer m_awesomizer;
 
         public Gym(GymSector gym_obj)
@@ -67,6 +69,11 @@ namespace Gym_Interactions
             ControlHelpers.MakeTransparent(btnTreadMill);
             ControlHelpers.MakeTransparent(btnBike);
             ControlHelpers.MakeTransparent(btnSkata);
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

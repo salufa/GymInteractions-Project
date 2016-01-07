@@ -8,18 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Gym_Interactions.Utilities;
+using Gym_Interactions.Forms;
 
 namespace Gym_Interactions
 {
-    public partial class Reception : Form
+    public partial class Reception : BaseForm
     {
         public Pool Pool = new Pool(new PoolSector());
         public Gym gym = new Gym(new GymSector());
         public BarRoom bar = new BarRoom(new BarSector());
         public LockerRoom lockers = new LockerRoom(new LockersSector());
-        
+
 
         public Reception(bool personelflag)
+            : base()
         {
             InitializeComponent();
 
@@ -27,7 +29,7 @@ namespace Gym_Interactions
             if (personelflag)
             {
                 Enable_EmployeeButtons();
-                
+
             }
             else
             {
@@ -77,30 +79,24 @@ namespace Gym_Interactions
 
         private void btnPool_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
-            Pool.ShowDialog();
+            Pool.Visit(this);
 
         }
 
         private void btnGym_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            gym.ShowDialog();
+            gym.Visit(this);
         }
 
         private void btnLockers_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            lockers.ShowDialog();
+            lockers.Visit(this);
 
         }
 
         private void btnBar_CLick(object sender, EventArgs e)
         {
-            this.Hide();
-
-            bar.ShowDialog();
+            bar.Visit(this);
 
         }
 

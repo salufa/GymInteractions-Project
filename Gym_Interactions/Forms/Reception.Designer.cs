@@ -98,40 +98,46 @@
             // 
             // btnPool
             // 
+            this.btnPool.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.btnPool.Location = new System.Drawing.Point(645, 126);
             this.btnPool.Name = "btnPool";
             this.btnPool.Size = new System.Drawing.Size(63, 226);
             this.btnPool.TabIndex = 5;
+            this.btnPool.Text = "To Pool";
             this.btnPool.UseVisualStyleBackColor = true;
             this.btnPool.Click += new System.EventHandler(this.btnPool_Click);
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(12, 126);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 140);
             this.button2.TabIndex = 6;
-            this.button2.Text = "to gym";
+            this.button2.Text = "To Gym";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.btnGym_Click);
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button3.Location = new System.Drawing.Point(241, 136);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(94, 75);
             this.button3.TabIndex = 7;
-            this.button3.Text = "to bar";
+            this.button3.Text = "To Bar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.btnBar_CLick);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(568, 126);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button4.Location = new System.Drawing.Point(553, 126);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(53, 202);
+            this.button4.Size = new System.Drawing.Size(62, 202);
             this.button4.TabIndex = 8;
-            this.button4.Text = "to locker room";
+            this.button4.Text = "To Lockers";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.btnLockers_Click);
             // 
@@ -155,6 +161,15 @@
             this.Text = "Reception";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Reception_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Controls.SetChildIndex(this.btnPool, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.radioRegisterYes, 0);
+            this.Controls.SetChildIndex(this.radioRegisterNo, 0);
+            this.Controls.SetChildIndex(this.btnRegister, 0);
+            this.Controls.SetChildIndex(this.btnLogIn, 0);
+            this.Controls.SetChildIndex(this.button2, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.button4, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 

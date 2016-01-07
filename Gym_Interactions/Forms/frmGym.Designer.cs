@@ -37,40 +37,53 @@
             // 
             // btnBike
             // 
+            this.btnBike.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.btnBike.ForeColor = System.Drawing.Color.Blue;
             this.btnBike.Location = new System.Drawing.Point(207, 194);
             this.btnBike.Name = "btnBike";
             this.btnBike.Size = new System.Drawing.Size(162, 250);
             this.btnBike.TabIndex = 0;
-            this.btnBike.Text = "bicycle";
+            this.btnBike.Text = "BICYCLE";
             this.btnBike.UseVisualStyleBackColor = true;
             this.btnBike.Click += new System.EventHandler(this.btnBicycle_Click);
             // 
             // btnTreadMill
             // 
+            this.btnTreadMill.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.btnTreadMill.ForeColor = System.Drawing.Color.Blue;
             this.btnTreadMill.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTreadMill.Location = new System.Drawing.Point(463, 251);
+            this.btnTreadMill.Location = new System.Drawing.Point(478, 240);
             this.btnTreadMill.Name = "btnTreadMill";
-            this.btnTreadMill.Size = new System.Drawing.Size(208, 134);
+            this.btnTreadMill.Size = new System.Drawing.Size(208, 152);
             this.btnTreadMill.TabIndex = 1;
-            this.btnTreadMill.Text = "treadmill";
+            this.btnTreadMill.Text = "TREADMILL";
+            this.btnTreadMill.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnTreadMill.UseVisualStyleBackColor = true;
             // 
             // btnSkata
             // 
+            this.btnSkata.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.btnSkata.ForeColor = System.Drawing.Color.Blue;
             this.btnSkata.Location = new System.Drawing.Point(927, 44);
             this.btnSkata.Name = "btnSkata";
             this.btnSkata.Size = new System.Drawing.Size(166, 371);
             this.btnSkata.TabIndex = 2;
-            this.btnSkata.Text = "button3";
+            this.btnSkata.Text = "MACHINES";
             this.btnSkata.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button1.ForeColor = System.Drawing.Color.Blue;
             this.button1.Location = new System.Drawing.Point(711, 261);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 50);
+            this.button1.Size = new System.Drawing.Size(171, 84);
             this.button1.TabIndex = 3;
-            this.button1.Text = "weight lifting";
+            this.button1.Text = "WEIGHT LIFTING";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // Gym
@@ -87,6 +100,10 @@
             this.Name = "Gym";
             this.Text = "MainRoom";
             this.Load += new System.EventHandler(this.Gym_Load);
+            this.Controls.SetChildIndex(this.btnBike, 0);
+            this.Controls.SetChildIndex(this.btnTreadMill, 0);
+            this.Controls.SetChildIndex(this.btnSkata, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
             this.ResumeLayout(false);
 
         }

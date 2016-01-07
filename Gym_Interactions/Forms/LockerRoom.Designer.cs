@@ -34,21 +34,23 @@
             // 
             // btnSauna
             // 
+            this.btnSauna.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.btnSauna.Location = new System.Drawing.Point(192, 145);
             this.btnSauna.Name = "btnSauna";
-            this.btnSauna.Size = new System.Drawing.Size(49, 95);
+            this.btnSauna.Size = new System.Drawing.Size(58, 95);
             this.btnSauna.TabIndex = 0;
-            this.btnSauna.Text = "button1";
+            this.btnSauna.Text = "To Sauna";
             this.btnSauna.UseVisualStyleBackColor = true;
             this.btnSauna.Click += new System.EventHandler(this.btnSauna_Click);
             // 
             // btnShower
             // 
-            this.btnShower.Location = new System.Drawing.Point(117, 145);
+            this.btnShower.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.btnShower.Location = new System.Drawing.Point(107, 145);
             this.btnShower.Name = "btnShower";
-            this.btnShower.Size = new System.Drawing.Size(49, 93);
+            this.btnShower.Size = new System.Drawing.Size(63, 93);
             this.btnShower.TabIndex = 1;
-            this.btnShower.Text = "button2";
+            this.btnShower.Text = "To Showers";
             this.btnShower.UseVisualStyleBackColor = true;
             this.btnShower.Click += new System.EventHandler(this.btnShower_Click);
             // 
@@ -63,6 +65,8 @@
             this.Controls.Add(this.btnSauna);
             this.Name = "LockerRoom";
             this.Text = "LockerRoom";
+            this.Controls.SetChildIndex(this.btnSauna, 0);
+            this.Controls.SetChildIndex(this.btnShower, 0);
             this.ResumeLayout(false);
 
         }

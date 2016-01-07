@@ -1,4 +1,5 @@
-﻿using Gym_Interactions.Utilities;
+﻿using Gym_Interactions.Forms;
+using Gym_Interactions.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Gym_Interactions
 {
-    public partial class LockerRoom : Form
+    public partial class LockerRoom : BaseForm
     {
         public LockerRoom(LockersSector locker_obj)
         {

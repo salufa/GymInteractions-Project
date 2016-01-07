@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gym_Interactions.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,16 @@ using System.Windows.Forms;
 
 namespace Gym_Interactions
 {
-    public partial class Pool : Form
+    public partial class BarRoom : BaseForm
     {
-        public Pool(PoolSector pool_obj)
+        public BarRoom(BarSector bar_obj)
         {
             InitializeComponent();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
