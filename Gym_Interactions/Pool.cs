@@ -45,10 +45,10 @@ namespace Gym_Interactions
         private void swimBtn_Click(object sender, EventArgs e)
         {
 
-            //System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-            // player.SoundLocation = @"c:\Users\andrewchron\Documents\Visual Studio 2015\Projects\GymInteractions-Project-master\GymInteractions-Project-master\Gym_Interactions\Resources\Water_Churning.wav";
-            // player.Load();
-            // player.Play();
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+            player.SoundLocation = @"c:\Users\andrewchron\Documents\Visual Studio 2015\Projects\GymInteractions-Project-master\GymInteractions-Project-master\Gym_Interactions\Resources\Water_Churning.wav";
+            player.Load();
+            player.Play();
 
             //human is in the pool
             humanInside = true;
@@ -189,7 +189,7 @@ namespace Gym_Interactions
 
                     if ((humanInside == true) && ((BrightnessLevel <= 0.8) || (WaterLevel < 30) || ((temperature < 15 && temperature > 35))))
                     {
-                        MessageBox.Show("Alarm has been triggerd!");
+                        MessageBox.Show("Alarm has been triggered!");
                         alarm = true;
                     }
                     else

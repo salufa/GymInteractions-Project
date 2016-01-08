@@ -68,5 +68,11 @@ namespace Gym_Interactions
             ControlHelpers.MakeTransparent(btnBike);
             ControlHelpers.MakeTransparent(btnSkata);
         }
+
+        private void btnTreadMill_Click_1(object sender, EventArgs e)
+        {
+            treadmill treadmill = new treadmill();
+            treadmill.ShowDialog();
+        }
     }
 }

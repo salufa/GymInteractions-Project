@@ -16,5 +16,7 @@ namespace Gym_Interactions
         {
             InitializeComponent();
         }
+
+        public object TextBox1 { get; internal set; }
     }
 }

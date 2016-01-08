@@ -54,6 +54,7 @@
             this.btnTreadMill.TabIndex = 1;
             this.btnTreadMill.Text = "treadmill";
             this.btnTreadMill.UseVisualStyleBackColor = true;
+            this.btnTreadMill.Click += new System.EventHandler(this.btnTreadMill_Click_1);
             // 
             // btnSkata
             // 

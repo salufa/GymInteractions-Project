@@ -70,6 +70,12 @@
     </Compile>
     <Compile Include="Sauna.cs" />
     <Compile Include="Showers.cs" />
+    <Compile Include="treadmill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="treadmill.Designer.cs">
+      <DependentUpon>treadmill.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\AssetFactory.cs" />
     <Compile Include="Utilities\BaseSector.cs" />
     <Compile Include="Utilities\Bicycle.cs" />
@@ -167,6 +173,9 @@
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="treadmill.resx">
+      <DependentUpon>treadmill.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -195,6 +204,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pool.png" />
+    <None Include="Resources\treadmill_panel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
