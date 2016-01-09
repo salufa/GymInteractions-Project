@@ -52,43 +52,48 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssetEventArgs.cs" />
-    <Compile Include="Forms\BarRoom.cs">
+    <Compile Include="BarRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BarRoom.Designer.cs">
+    <Compile Include="BarRoom.Designer.cs">
       <DependentUpon>BarRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\IBackTrackingForm.cs" />
-    <Compile Include="Products\Swim.cs" />
-    <Compile Include="Sectors\BarSector.cs" />
-    <Compile Include="Products\Bicycle.cs" />
-    <Compile Include="Sectors\GymSector.cs" />
-    <Compile Include="Products\Machines.cs" />
+    <Compile Include="BarSector.cs" />
+    <Compile Include="GymSector.cs" />
     <Compile Include="Models\MultiUserMachine.cs" />
     <Compile Include="Models\SectorAsset.cs" />
-    <Compile Include="Products\Sauna.cs" />
-    <Compile Include="Products\Showers.cs" />
-    <Compile Include="Products\Treadmill.cs" />
+    <Compile Include="PoolSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoolSettings.Designer.cs">
+      <DependentUpon>PoolSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sauna.cs" />
+    <Compile Include="Showers.cs" />
+    <Compile Include="treadmill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="treadmill.Designer.cs">
+      <DependentUpon>treadmill.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\AssetFactory.cs" />
     <Compile Include="Utilities\BaseSector.cs" />
+    <Compile Include="Utilities\Bicycle.cs" />
     <Compile Include="Utilities\ISupportsSimulation.cs" />
-    <Compile Include="Forms\LockerRoom.cs">
+    <Compile Include="LockerRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\LockerRoom.Designer.cs">
+    <Compile Include="LockerRoom.Designer.cs">
       <DependentUpon>LockerRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sectors\LockersSector.cs" />
+    <Compile Include="LockersSector.cs" />
     <Compile Include="Models\Trainer.cs" />
     <Compile Include="Models\TrainingProgram.cs" />
-    <Compile Include="Sectors\PoolSector.cs" />
-    <Compile Include="Forms\Reception.cs">
+    <Compile Include="PoolSector.cs" />
+    <Compile Include="Reception.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Reception.Designer.cs">
+    <Compile Include="Reception.Designer.cs">
       <DependentUpon>Reception.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
@@ -98,59 +103,61 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="ISector.cs" />
-    <Compile Include="Forms\LoginForm.cs">
+    <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\LoginForm.Designer.cs">
+    <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmGym.cs">
+    <Compile Include="frmGym.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmGym.Designer.cs">
+    <Compile Include="frmGym.Designer.cs">
       <DependentUpon>frmGym.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Pool.cs">
+    <Compile Include="Pool.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Pool.Designer.cs">
+    <Compile Include="Pool.Designer.cs">
       <DependentUpon>Pool.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Forms\RegisterForm.cs">
+    <Compile Include="RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\RegisterForm.Designer.cs">
+    <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Utilities\ControlHelpers.cs" />
     <Compile Include="Utilities\EnumerableExtensions.cs" />
+    <Compile Include="Utilities\Machines.cs" />
     <Compile Include="Utilities\SectorAwesomizer.cs" />
     <Compile Include="Utilities\SectorAwesomizerFlow.cs" />
-    <Compile Include="Products\WeightBench.cs" />
-    <EmbeddedResource Include="Forms\BarRoom.resx">
+    <Compile Include="Utilities\Treadmill.cs" />
+    <Compile Include="Utilities\WeightBench.cs" />
+    <EmbeddedResource Include="BarRoom.resx">
       <DependentUpon>BarRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BaseForm.resx">
-      <DependentUpon>BaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\LockerRoom.resx">
+    <EmbeddedResource Include="LockerRoom.resx">
       <DependentUpon>LockerRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Reception.resx">
+    <EmbeddedResource Include="PoolSettings.resx">
+      <DependentUpon>PoolSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reception.resx">
       <DependentUpon>Reception.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\LoginForm.resx">
+    <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmGym.resx">
+    <EmbeddedResource Include="frmGym.resx">
       <DependentUpon>frmGym.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Pool.resx">
+    <EmbeddedResource Include="Pool.resx">
       <DependentUpon>Pool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -163,8 +170,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Forms\RegisterForm.resx">
+    <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="treadmill.resx">
+      <DependentUpon>treadmill.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -189,7 +199,13 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Pool1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pool.png" />
+    <None Include="Resources\treadmill_panel.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

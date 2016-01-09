@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Gym_Interactions
 {
-    public partial class Form2 : Form
+    public partial class BarRoom : Form
     {
-        public Form2()
+        public BarRoom(BarSector bar_obj)
         {
             InitializeComponent();
         }
-
-        public object TextBox1 { get; internal set; }
     }
 }
