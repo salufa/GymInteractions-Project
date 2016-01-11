@@ -18,7 +18,7 @@ namespace Gym_Interactions
         public BarRoom bar = new BarRoom(new BarSector());
         public LockerRoom lockers = new LockerRoom(new LockersSector());
         
-
+        
         public Reception(bool personelflag)
         {
             InitializeComponent();

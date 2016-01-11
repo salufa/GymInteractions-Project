@@ -63,6 +63,16 @@ namespace Gym_Interactions.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap byzarou {
+            get {
+                object obj = ResourceManager.GetObject("byzarou", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nonslip_locker_room2 {
             get {
                 object obj = ResourceManager.GetObject("nonslip-locker room2", resourceCulture);

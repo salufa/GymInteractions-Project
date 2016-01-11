@@ -62,6 +62,12 @@
     <Compile Include="GymSector.cs" />
     <Compile Include="Models\MultiUserMachine.cs" />
     <Compile Include="Models\SectorAsset.cs" />
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
     <Compile Include="PoolSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <EmbeddedResource Include="LockerRoom.resx">
       <DependentUpon>LockerRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PoolSettings.resx">
       <DependentUpon>PoolSettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +213,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pool.png" />
+    <None Include="Resources\byzarou.png" />
     <None Include="Resources\treadmill_panel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -16,5 +16,16 @@ namespace Gym_Interactions
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void orderWizardBtn_Click(object sender, EventArgs e)
+        {
+            Order order = new Order();
+            order.ShowDialog();
+        }
     }
 }

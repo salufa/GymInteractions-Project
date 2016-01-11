@@ -77,7 +77,7 @@ namespace Gym_Interactions
         public void Suggestions(int mass, int age, bool healthy)
         {
 
-            string type, food_program;
+            string food_program;
 
             if (mass > 100 || (age > 50 || age < 18))
             {
