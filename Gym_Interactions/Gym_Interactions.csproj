@@ -62,6 +62,12 @@
     <Compile Include="GymSector.cs" />
     <Compile Include="Models\MultiUserMachine.cs" />
     <Compile Include="Models\SectorAsset.cs" />
+    <Compile Include="OnlineHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineHelp.Designer.cs">
+      <DependentUpon>OnlineHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Order.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     <EmbeddedResource Include="LockerRoom.resx">
       <DependentUpon>LockerRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OnlineHelp.resx">
+      <DependentUpon>OnlineHelp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +204,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Εγχειρίδια χρήστη.pdf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

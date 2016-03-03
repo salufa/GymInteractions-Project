@@ -120,5 +120,14 @@ namespace Gym_Interactions
         {
 
         }
+
+        private void helpbtn_Click(object sender, EventArgs e)
+        {
+            OnlineHelp OnlineHelp = new OnlineHelp();
+            OnlineHelp.ShowDialog();
+        }
+
+     
+
     }
 }

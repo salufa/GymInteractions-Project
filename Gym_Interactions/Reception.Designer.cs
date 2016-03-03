@@ -38,13 +38,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.helpbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(768, 9);
+            this.label1.Location = new System.Drawing.Point(711, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(195, 20);
             this.label1.TabIndex = 0;
@@ -54,7 +55,7 @@
             // 
             this.radioRegisterYes.AutoSize = true;
             this.radioRegisterYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioRegisterYes.Location = new System.Drawing.Point(772, 32);
+            this.radioRegisterYes.Location = new System.Drawing.Point(715, 32);
             this.radioRegisterYes.Name = "radioRegisterYes";
             this.radioRegisterYes.Size = new System.Drawing.Size(55, 24);
             this.radioRegisterYes.TabIndex = 1;
@@ -66,7 +67,7 @@
             // 
             this.radioRegisterNo.AutoSize = true;
             this.radioRegisterNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioRegisterNo.Location = new System.Drawing.Point(878, 32);
+            this.radioRegisterNo.Location = new System.Drawing.Point(821, 32);
             this.radioRegisterNo.Name = "radioRegisterNo";
             this.radioRegisterNo.Size = new System.Drawing.Size(47, 24);
             this.radioRegisterNo.TabIndex = 2;
@@ -77,7 +78,7 @@
             // btnRegister
             // 
             this.btnRegister.Enabled = false;
-            this.btnRegister.Location = new System.Drawing.Point(878, 71);
+            this.btnRegister.Location = new System.Drawing.Point(821, 71);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(75, 23);
             this.btnRegister.TabIndex = 3;
@@ -88,7 +89,7 @@
             // btnLogIn
             // 
             this.btnLogIn.Enabled = false;
-            this.btnLogIn.Location = new System.Drawing.Point(772, 70);
+            this.btnLogIn.Location = new System.Drawing.Point(715, 70);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(75, 23);
             this.btnLogIn.TabIndex = 4;
@@ -136,13 +137,24 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.btnLockers_Click);
             // 
+            // helpbtn
+            // 
+            this.helpbtn.Location = new System.Drawing.Point(714, 99);
+            this.helpbtn.Name = "helpbtn";
+            this.helpbtn.Size = new System.Drawing.Size(75, 23);
+            this.helpbtn.TabIndex = 9;
+            this.helpbtn.Text = "onLine Help";
+            this.helpbtn.UseVisualStyleBackColor = true;
+            this.helpbtn.Click += new System.EventHandler(this.helpbtn_Click);
+            // 
             // Reception
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(994, 364);
+            this.ClientSize = new System.Drawing.Size(909, 359);
+            this.Controls.Add(this.helpbtn);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -172,6 +184,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button helpbtn;
     }
 }
 
